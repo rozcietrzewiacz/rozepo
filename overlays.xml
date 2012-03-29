@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>moja</name>
+    <description>Moje dodatkowe oprogramowanie</description>
+    <homepage>BRAK</homepage>
+    <owner>
+      <email>jankeso@gmail.com</email>
+    </owner>
+  </repo>
+</repositories>

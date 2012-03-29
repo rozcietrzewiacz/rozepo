@@ -1,0 +1,22 @@
+>=app-admin/eselect-python-20091230 =dev-lang/python-2* dev-vcs/subversion net-misc/rsync
+>=dev-vcs/git-1.6.6[curl] >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+0
+
+
+http://dev.chromium.org/developers/how-tos/depottools
+BSD
+Scripts to manage integration with Chromium repository and development process
+
+eutils multilib portability python subversion toolchain-funcs user
+
+
+
+
+2
+
+install preinst prepare unpack
+
+
+
+
+

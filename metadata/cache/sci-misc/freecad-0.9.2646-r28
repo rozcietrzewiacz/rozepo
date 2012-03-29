@@ -1,0 +1,22 @@
+sci-libs/opencascade x11-libs/qt-gui:4 x11-libs/qt-svg:4 x11-libs/qt-webkit:4 >=media-libs/coin-3.1.2 sci-libs/gts sys-libs/zlib dev-libs/boost dev-python/PyQt4 dev-libs/xerces-c >=media-libs/SoQt-1.4.2_alpha1841 dev-lang/swig >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+sci-libs/opencascade x11-libs/qt-gui:4 x11-libs/qt-svg:4 x11-libs/qt-webkit:4 >=media-libs/coin-3.1.2 sci-libs/gts sys-libs/zlib dev-libs/boost dev-python/PyQt4 dev-libs/xerces-c >=media-libs/SoQt-1.4.2_alpha1841 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+0
+mirror://sourceforge/free-cad/FreeCAD-0.9.2646-2.tar.gz
+
+http://sourceforge.net/apps/mediawiki/free-cad/
+GPL-2
+QT based Computer Aided Design Application
+~amd64 ~x86
+multilib python toolchain-funcs
+
+
+
+
+3
+
+configure install setup
+
+
+
+
+

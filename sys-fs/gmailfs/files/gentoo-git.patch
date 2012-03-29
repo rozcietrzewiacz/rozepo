@@ -1,0 +1,17 @@
+--- gmailfs-9999/conf/gmailfs.conf	2010-09-10 14:45:13.520000038 +0200
++++ gmailfs-9999/conf/gmailfs.conf-orig		2010-09-10 14:52:30.060000038 +0200
+@@ -28,2 +28,2 @@
+ # equivalent for it
+-logfile = ~/gmailfs.log
++logfile = /var/log/gmailfs.log
+--- gmailfs-9999/gmailfs.py	2010-09-10 14:45:13.520000038 +0200
++++ gmailfs-9999/gmailfs.py-orig	2010-09-10 14:52:30.060000038 +0200
+@@ -117,7 +117,7 @@
+ BlockCacheSize = 100
+ 
+ SystemConfigFile = "/etc/gmailfs/gmailfs.conf"
+-UserConfigFile = abspath(expanduser("~/.gmailfs.conf"))
++UserConfigFile = abspath(expanduser("~/.gmailfs"))
+ 
+ GMAILFS_VERSION = '5'
+ 
