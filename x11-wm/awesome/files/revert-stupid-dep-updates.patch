@@ -1,0 +1,42 @@
+--- awesomeConfig.cmake-old	2009-08-30 00:23:49.000000000 +0200
++++ awesomeConfig.cmake	2009-08-30 00:24:48.000000000 +0200
+@@ -129,7 +129,7 @@
+ 
+ # Use pkgconfig to get most of the libraries
+ pkg_check_modules(AWESOME_COMMON_REQUIRED REQUIRED
+-    xcb>=1.4)
++    xcb>=1.1)
+ 
+ pkg_check_modules(AWESOME_REQUIRED REQUIRED
+     glib-2.0
+@@ -140,7 +140,7 @@
+     xcb-randr
+     xcb-xtest
+     xcb-xinerama
+-    xcb-event>=0.3.6
++    xcb-event>=0.3.4
+     xcb-aux>=0.3.0
+     xcb-atom>=0.3.0
+     xcb-keysyms>=0.3.4
+--- awesome.c-old	2009-08-30 00:18:15.000000000 +0200
++++ awesome.c	2009-08-30 00:22:47.000000000 +0200
+@@ -276,15 +276,15 @@
+     /* ignore this */
+     if(e->error_code == XCB_EVENT_ERROR_BAD_WINDOW
+        || (e->error_code == XCB_EVENT_ERROR_BAD_MATCH
+-           && e->major_code == XCB_SET_INPUT_FOCUS)
++           && XCB_EVENT_REQUEST_TYPE(e) == XCB_SET_INPUT_FOCUS)
+        || (e->error_code == XCB_EVENT_ERROR_BAD_VALUE
+-           && e->major_code == XCB_KILL_CLIENT)
+-       || (e->major_code == XCB_CONFIGURE_WINDOW
++           && XCB_EVENT_REQUEST_TYPE(e) == XCB_KILL_CLIENT)
++       || (XCB_EVENT_REQUEST_TYPE(e) == XCB_CONFIGURE_WINDOW
+            && e->error_code == XCB_EVENT_ERROR_BAD_MATCH))
+         return 0;
+ 
+     warn("X error: request=%s, error=%s",
+-         xcb_event_get_request_label(e->major_code),
++         xcb_event_get_request_label(XCB_EVENT_REQUEST_TYPE(e)),
+          xcb_event_get_error_label(e->error_code));
+ 
+     return 0;

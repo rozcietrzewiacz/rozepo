@@ -1,0 +1,31 @@
+# This simple patch makes the r8168 driver code compatible with 
+#  linux 2.6.35+ api (due to changes in netdevice.h).
+# Created based on the r8169 kernel built-in driver
+# by .yankee (jankeso -at- gmail com)
+--- src-orig/r8168_n.c	2010-08-28 21:34:19.004057113 +0200
++++ src/r8168_n.c	2010-08-30 15:58:41.006453348 +0200
+@@ -8916,18 +8916,18 @@
+ 		    AcceptBroadcast | AcceptMulticast | AcceptMyPhys |
+ 		    AcceptAllPhys;
+ 		mc_filter[1] = mc_filter[0] = 0xffffffff;
+-	} else if ((dev->mc_count > multicast_filter_limit)
++	} else if ((netdev_mc_count(dev) > multicast_filter_limit)
+ 		   || (dev->flags & IFF_ALLMULTI)) {
+ 		/* Too many to filter perfectly -- accept all multicasts. */
+ 		rx_mode = AcceptBroadcast | AcceptMulticast | AcceptMyPhys;
+ 		mc_filter[1] = mc_filter[0] = 0xffffffff;
+ 	} else {
+-		struct dev_mc_list *mclist;
++		struct netdev_hw_addr *ha;
++
+ 		rx_mode = AcceptBroadcast | AcceptMyPhys;
+ 		mc_filter[1] = mc_filter[0] = 0;
+-		for (i = 0, mclist = dev->mc_list; mclist && i < dev->mc_count;
+-		     i++, mclist = mclist->next) {
+-			int bit_nr = ether_crc(ETH_ALEN, mclist->dmi_addr) >> 26;
++		netdev_for_each_mc_addr(ha, dev) {
++			int bit_nr = ether_crc(ETH_ALEN, ha->addr) >> 26;
+ 			mc_filter[bit_nr >> 5] |= 1 << (bit_nr & 31);
+ 			rx_mode |= AcceptMulticast;
+ 		}
+

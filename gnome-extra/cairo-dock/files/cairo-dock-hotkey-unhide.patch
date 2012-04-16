@@ -1,0 +1,15 @@
+--- src/cairo-dock-callbacks.c	2009-09-29 11:32:05.000000000 +0200
++++ src/cairo-dock-callbacks.c	2010-05-18 20:02:33.655258056 +0200
+@@ -760,6 +760,12 @@
+ 
+ gboolean cairo_dock_on_enter_notify (GtkWidget* pWidget, GdkEventCrossing* pEvent, CairoDock *pDock)
+ {
++	if (!(pEvent->state & (GDK_MOD1_MASK|GDK_CONTROL_MASK)))
++	{
++		g_print("Brak wcisnietego klawisza (Ctrl lub Alt)");
++		return FALSE;
++	}
++
+ 	if (pEvent && pDock->pShapeBitmap)  // XInputShape is broken. We manage ourself the entry.
+ 	{
+ 		int x = (pDock->container.bIsHorizontal ? pEvent->x : pDock->container.iWidth - pEvent->y);

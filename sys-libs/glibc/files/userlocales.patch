@@ -1,0 +1,28 @@
+diff -uNr a/extra/locale/locale.gen b/extra/locale/locale.gen
+--- a/extra/locale/locale.gen	2009-04-01 10:11:35.000000000 +0400
++++ b/extra/locale/locale.gen	2009-06-23 13:45:37.000000000 +0400
+@@ -15,17 +15,10 @@
+ # rebuilt for you.  After updating this file, you can simply run `locale-gen`
+ # yourself instead of re-emerging glibc.
+ 
+-#en_US ISO-8859-1
+-#en_US.UTF-8 UTF-8
+-#ja_JP.EUC-JP EUC-JP
+-#ja_JP.UTF-8 UTF-8
+-#ja_JP EUC-JP
+-#en_HK ISO-8859-1
+-#en_PH ISO-8859-1
+-#de_DE ISO-8859-1
+-#de_DE@euro ISO-8859-15
+-#es_MX ISO-8859-1
+-#fa_IR UTF-8
+-#fr_FR ISO-8859-1
+-#fr_FR@euro ISO-8859-15
+-#it_IT ISO-8859-1
++en_US ISO-8859-1
++en_US.UTF-8 UTF-8
++ru_RU.ISO-8859-5 ISO-8859-5
++ru_RU.UTF-8 UTF-8
++ru_RU.KOI8-R KOI8-R
++ru_RU.CP1251 CP1251
++

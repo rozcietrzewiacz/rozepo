@@ -1,0 +1,25 @@
+--- lib/awful/widget/taglist.lua.in-old	2009-08-25 13:46:30.000000000 +0200
++++ lib/awful/widget/taglist.lua.in	2009-08-30 01:30:42.000000000 +0200
+@@ -44,8 +44,8 @@
+     local w = {}
+     local widgets = { }
+     widgets.imagebox = { }
+-    widgets.textbox  = { ["margin"] = { ["left"]  = 0,
+-                                        ["right"] = 0},
++    widgets.textbox  = { ["margin"] = { ["left"]  = 3,
++                                        ["right"] = 3},
+                          ["bg_resize"] = true
+                        }
+     local data = setmetatable({}, { __mode = 'k' })
+@@ -143,9 +143,9 @@
+     if not tag.getproperty(t, "icon_only") then
+         if fg_color then
+             text = text .. "<span color='"..util.color_strip_alpha(fg_color).."'>"
+-            text = " " .. text.. (util.escape(t.name) or "") .." </span>"
++            text = text .. (t.name or "") .. "</span>"
+         else
+-            text = text .. " " .. (util.escape(t.name) or "") .. " "
++            text = text .. (t.name or "")
+         end
+     end
+     text = text .. "</span>"
