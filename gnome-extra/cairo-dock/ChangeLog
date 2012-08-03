@@ -1,0 +1,65 @@
+# ChangeLog for gnome-extra/cairo-dock
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  08 Mar 2009; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  gnome-extra/cairo-dock/cairo-dock-1.6.3.1.ebuild,
+  gnome-extra/cairo-dock/cairo-dock-9999.ebuild:
+  To build cairo-dock with glitz, we need cairo built with glitz.
+
+  21 Dec 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-1.6.3.1.ebuild:
+  Added ~amd64 keywords.
+
+*cairo-dock-1.6.3.1 (20 Dec 2008)
+
+  20 Dec 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +files/cairo-dock-missing-header.patch, metadata.xml,
+  +cairo-dock-1.6.3.1.ebuild:
+  Added cairo-dock-1.6.3.1 - thanks to Bill Smith <sememmon@gmail.com> for
+  the ebuild.
+
+  01 Nov 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-9999.ebuild:
+  Added a local src_compile until the gnome team can fix the gnome2 eclass.
+
+  20 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-9999.ebuild:
+  Removed the call to glib-gettextize to prevent the compilation issues with
+  intltool-0.4.5.
+
+  26 Sep 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  -cairo-dock-9999-r1.ebuild, cairo-dock-9999.ebuild:
+  Bumped to EAPI-2.
+
+  13 Sep 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-9999.ebuild:
+  Call eautoreconf after intltoolize and removed double pkg_setup.
+
+*cairo-dock-9999-r1 (18 Aug 2008)
+
+  18 Aug 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +cairo-dock-9999-r1.ebuild, cairo-dock-9999.ebuild:
+  Move EAPI-2_pre1 support to a new masked 9999-r1 ebuild. Converted 9999 to
+  EAPI-1.
+
+  03 Aug 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-9999.ebuild:
+  Dropped keywords.
+
+  03 Aug 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  metadata.xml:
+  Added glitz use flag description to metadata.xml.
+
+  30 Jul 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-9999.ebuild:
+  Updated EAPI to 2_pre1 as a result of the update in portage-2.2_rc5.
+
+*cairo-dock-9999 (30 Jul 2008)
+
+  30 Jul 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +metadata.xml, +cairo-dock-9999.ebuild:
+  Initial import of cairo-dock. Many thanks to Jupiter for the initial
+  ebuild and Bill Smith (Sememmon) for the continued "pestering", testing
+  and updates to the ebuild.
+
