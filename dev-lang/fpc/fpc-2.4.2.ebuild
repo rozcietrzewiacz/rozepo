@@ -20,11 +20,7 @@ SRC_URI="
 
 SLOT="0"
 LICENSE="GPL-2 LGPL-2.1 LGPL-2.1-FPC"
-<<<<<<< HEAD
-KEYWORDS="~amd64"
-=======
 KEYWORDS="~amd64 ~x86"
->>>>>>> gh/tera
 IUSE="doc source"
 
 DEPEND="!dev-lang/fpc-bin
@@ -35,11 +31,7 @@ RDEPEND="${DEPEND}"
 
 src_unpack() {
 	case ${ARCH} in
-<<<<<<< HEAD
-		x86)	FPC_ARCH="386" ;;
-=======
 		x86)	FPC_ARCH="i386" ;;
->>>>>>> gh/tera
 		ppc)	FPC_ARCH="ppc" ;;
 		amd64)	FPC_ARCH="x86_64" ;;
 		sparc)	FPC_ARCH="sparc" ;;

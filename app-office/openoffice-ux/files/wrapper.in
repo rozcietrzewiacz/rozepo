@@ -1,8 +1,4 @@
 #!/bin/sh
 export OOO_EXTRA_ARG=''
 unset PYTHONPATH
-<<<<<<< HEAD
-/usr/LIBDIR/openoffice/program/soffice  "$@"
-=======
 @GENTOO_PORTAGE_EPREFIX@/usr/LIBDIR/openoffice/program/soffice "$@"
->>>>>>> gh/tera
