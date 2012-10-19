@@ -1,0 +1,12 @@
+--- panel/panel-properties.c-orig	2009-07-08 15:19:54.000000000 +0200
++++ panel/panel-properties.c	2009-07-08 15:20:17.000000000 +0200
+@@ -838,7 +838,8 @@
+ {
+     PanelPrivate *priv;
+ 
+-    if (event->detail != GDK_NOTIFY_INFERIOR)
++    if (event->detail != GDK_NOTIFY_INFERIOR && 
++    	(event->state & (GDK_MOD1_MASK | GDK_CONTROL_MASK)))
+     {
+         panel_app_set_current_panel ((gpointer)panel);
+ 

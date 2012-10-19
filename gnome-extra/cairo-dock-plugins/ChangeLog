@@ -1,0 +1,36 @@
+# ChangeLog for gnome-extra/cairo-dock-plugins
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*cairo-dock-plugins-1.6.3.1 (21 Dec 2008)
+
+  21 Dec 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +cairo-dock-plugins-1.6.3.1.ebuild:
+  Added cairo-dock-plugins-1.6.3.1 - thanks to Bill Smith
+  <sememmon@gmail.com> for the ebuild.
+
+  21 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-plugins-9999.ebuild:
+  Removed the call to glib-gettextize to prevent the compilation issues with
+  intltool-0.4.5.
+
+  13 Sep 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-plugins-9999.ebuild:
+  Call eautoreconf after intltoolize.
+
+  03 Aug 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  cairo-dock-plugins-9999.ebuild:
+  Dropped keywords.
+
+  02 Aug 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  metadata.xml:
+  Added use flag description to metadata.xml.
+
+*cairo-dock-plugins-9999 (30 Jul 2008)
+
+  30 Jul 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +metadata.xml, +cairo-dock-plugins-9999.ebuild:
+  Initial import of cairo-dock-plugins. Many thanks to Bill Smith (Sememmon)
+  for the initial ebuild, the continued "pestering", testing and updates to
+  the ebuild.
+

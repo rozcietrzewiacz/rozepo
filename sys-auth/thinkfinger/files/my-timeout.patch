@@ -1,0 +1,11 @@
+--- aaa/libthinkfinger/libthinkfinger.c	2010-07-02 23:58:11.000000000 +0200
++++ bbb/libthinkfinger/libthinkfinger.c	2010-07-03 00:11:20.000000000 +0200
+@@ -35,7 +35,7 @@
+ 
+ #define USB_VENDOR_ID     0x0483
+ #define USB_PRODUCT_ID    0x2016
+-#define USB_TIMEOUT       5000
++#define USB_TIMEOUT       50
+ #define USB_WR_EP         0x02
+ #define USB_RD_EP         0x81
+ #define DEFAULT_BULK_SIZE 0x40

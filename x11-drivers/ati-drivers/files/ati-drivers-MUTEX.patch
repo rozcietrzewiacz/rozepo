@@ -1,0 +1,11 @@
+--- aaa/common/lib/modules/fglrx/build_mod/firegl_public.c	2010-12-21 08:41:59.102999996 +0100
++++ bbb/common/lib/modules/fglrx/build_mod/firegl_public.c	2010-12-21 09:15:31.230999992 +0100
+@@ -5096,7 +5100,7 @@
+ unsigned int ATI_API_CALL KAS_Mutex_Initialize(void* hMutex)
+ {
+     kasMutex_t* mutex_obj = (kasMutex_t*)hMutex;
+-    init_MUTEX(&(mutex_obj->mutex));
++    sema_init(&(mutex_obj->mutex),1);
+     return 1;
+ }
+ 

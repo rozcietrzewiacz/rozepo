@@ -1,0 +1,11 @@
+--- Makefile.old	2009-10-08 16:20:40.000000000 +0200
++++ Makefile	2009-10-08 16:21:02.000000000 +0200
+@@ -20,7 +20,7 @@
+ install: all
+ 	@echo installing executeable to /usr/bin
+ 	@mkdir -p /usr/bin
+-	@cp -f ${TARGET} /usr/bin
++	@cp ${TARGET} /usr/bin/
+ 	@chmod 755 /usr/bin/${TARGET}
+ 
+ uninstall:

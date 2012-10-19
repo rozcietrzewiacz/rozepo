@@ -1,0 +1,11 @@
+--- a/src/cairo-dock-callbacks.c	2009-09-29 11:32:05.000000000 +0200
++++ b/src/cairo-dock-callbacks.c	2010-05-17 23:35:33.887216624 +0200
+@@ -866,6 +866,8 @@
+ 		}
+ 	}
+ 	
++	if (!(pEvent->state & (GDK_MOD1_MASK|GDK_CONTROL_MASK))) return FALSE;
++
+ 	if (!g_bEasterEggs || (pDock->bAutoHide && pDock->iRefCount == 0 && pDock->bAtBottom))  // on sort de l'etat auto-hide.
+ 	{
+ 		int iNewWidth, iNewHeight;

@@ -1,0 +1,22 @@
+gnome-base/gdm dev-python/setuptools >=dev-vcs/bzr-2.0.1 >=app-admin/eselect-python-20091230 dev-lang/python
+gnome-base/gdm dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python
+0
+
+
+https://launchpad.net/gdm2setup
+GPL-3
+GDM management utility
+~x86 ~amd64
+bzr distutils eutils multilib portability python toolchain-funcs user
+
+
+
+
+3
+
+compile install postinst postrm prepare unpack
+
+
+
+
+
