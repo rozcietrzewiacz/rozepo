@@ -1,0 +1,15 @@
+diff --git a/port/cpl_minizip_ioapi.h b/port/cpl_minizip_ioapi.h
+index 80ebc4b..6a68761 100644
+--- a/port/cpl_minizip_ioapi.h
++++ b/port/cpl_minizip_ioapi.h
+@@ -41,6 +41,10 @@
+ #endif
+ #endif
+ 
++#ifndef OF
++#define OF(x) x
++#endif
++
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
