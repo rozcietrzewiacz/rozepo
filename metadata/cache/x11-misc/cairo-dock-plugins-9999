@@ -1,0 +1,22 @@
+~x11-misc/cairo-dock-9999 alsa? ( media-libs/alsa-lib ) exif? ( media-libs/libexif ) gmenu? ( gnome-base/gnome-menus ) kde? ( kde-base/kdelibs ) terminal? ( x11-libs/vte ) webkit? ( >=net-libs/webkit-gtk-1.0 ) xfce? ( xfce-base/thunar ) xgamma? ( x11-libs/libXxf86vm ) xklavier? ( x11-libs/libxklavier ) dev-util/intltool sys-devel/gettext dev-util/pkgconfig >=dev-vcs/bzr-2.0.1
+~x11-misc/cairo-dock-9999 alsa? ( media-libs/alsa-lib ) exif? ( media-libs/libexif ) gmenu? ( gnome-base/gnome-menus ) kde? ( kde-base/kdelibs ) terminal? ( x11-libs/vte ) webkit? ( >=net-libs/webkit-gtk-1.0 ) xfce? ( xfce-base/thunar ) xgamma? ( x11-libs/libXxf86vm ) xklavier? ( x11-libs/libxklavier )
+0
+
+
+https://launchpad.net/cairo-dock-plug-ins/
+GPL-3
+Official plugins for cairo-dock
+
+bzr eutils multilib portability toolchain-funcs user
+alsa compiz exif gio gmenu gnome kde mail musicplayer network-monitor powermanager terminal tomboy webkit wifi xfce xgamma xklavier
+
+
+
+2
+
+configure prepare setup unpack
+
+
+
+
+
