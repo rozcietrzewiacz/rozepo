@@ -4,7 +4,7 @@
 
 EGIT_REPO_URI="git://projects.reactivated.net/~dsd/pam_fprint.git"
 
-inherit git eutils autotools
+inherit git-2 eutils autotools
 
 DESCRIPTION="pam_fprint"
 HOMEPAGE="http://www.reactivated.net/fprint/wiki/Pam_fprint"

@@ -16,14 +16,14 @@ KEYWORDS="~x86 ~amd64"
 
 IUSE="qt4"
 
-RDEPEND="qt4? ( x11-libs/qt-core x11-libs/qt-gui )
+RDEPEND="qt4? ( dev-qt/qtcore dev-qt/qtgui )
          >dev-libs/libusb-1.0"
 
 DEPEND="$RDEPEND
         dev-util/pkgconfig"
 
 src_prepare() {
-    rm -r libusb-1.0 || die "Can't delete libusb sources"
+    rm -r libusbx-1.0 || die "Can't delete libusb sources"
     edos2unix "${S}"/${PN}-frontend/${PN}-frontend.pro
     edos2unix "${S}"/${PN}/Makefile.am
     sed -e 's:/usr/local:/usr:g' -i "${S}"/${PN}-frontend/${PN}-frontend.pro \

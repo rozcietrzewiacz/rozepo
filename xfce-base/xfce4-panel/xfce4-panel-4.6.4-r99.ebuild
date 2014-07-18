@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/xfce-base/xfce4-panel/xfce4-panel-4.6.1.ebuild,v 1.9 2009/06/30 19:16:36 klausman Exp $
 
-EAPI=3
+EAPI=5
 
 inherit xfconf
 #xfce4_core xfce4

@@ -6,7 +6,7 @@ EAPI="2"
 
 inherit eutils games flag-o-matic subversion
 
-ESVN_REPO_URI="https://${PN}.svn.sourceforge.net/svnroot/${PN}/trunk"
+ESVN_REPO_URI="http://${PN}.svn.sourceforge.net/svnroot/${PN}/trunk@3000"
 
 DESCRIPTION="A free and open source karaoke game"
 HOMEPAGE="http://ultrastardx.sourceforge.net/"

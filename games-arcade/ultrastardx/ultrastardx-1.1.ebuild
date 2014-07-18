@@ -40,7 +40,6 @@ src_compile() {
 		$(use_with libprojectM) \
 		|| die "Configure failed!"
 	emake \
-	LDFLAGS="" \
 	|| die "emake failed"
 }
 
