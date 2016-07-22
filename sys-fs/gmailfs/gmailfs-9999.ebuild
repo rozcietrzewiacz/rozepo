@@ -3,10 +3,10 @@
 # $Header: $
 # This ebuild come from http://bugs.gentoo.org/show_bug.cgi?id=63785 - The site http://gentoo.zugaina.org/ only host a copy.
 
-EAPI="3"
+EAPI="4"
 PYTHON_DEPEND="2"
 
-inherit eutils git
+inherit eutils git-2
 
 KEYWORDS=""
 DESCRIPTION="GmailFS provides a mountable Linux filesystem which uses your Gmail account as its storage medium."
@@ -20,7 +20,6 @@ IUSE=""
 RDEPEND=">=dev-python/fuse-python-0.1
 	>=sys-fs/fuse-1.3
 	>=net-libs/libgmail-0.1.3.3"
-	#sys-fs/fuse-python" XXXXXX stare!
 
 
 src_unpack() {
